@@ -6,9 +6,6 @@
 
 #include <windows.h>
 
-
-
-//기존
 POINT startPoint = { 0 };
 POINT endPoint = { 0 };
 int isMouseLButtonPressed = 0;
@@ -106,16 +103,9 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 	// 리소스 정리
 	case WM_DESTROY:
-
-		//새로추가
-	
-
-	//기존
 		PostQuitMessage(0);
 		break;
-
-
-
+		
 	default:
 		return DefWindowProc(hwnd, uMsg, wParam, lParam);
 	}
